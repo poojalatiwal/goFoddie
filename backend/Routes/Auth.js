@@ -191,7 +191,7 @@ router.post("/foodData", async (req, res) => {
     res.json([foods, categories]);
 
   } catch (err) {
-    console.error("🔥 foodData route error:", err);
+    console.error(" foodData route error:", err);
     res.status(500).json({ error: "Server error" });
   }
 });
@@ -297,10 +297,9 @@ router.get('/myOrderData', fetch, async (req, res) => {
     for (let order of orders) {
       const orderTime = new Date(order.createdAt).getTime();
 
-      // 10 minutes = 600000 ms
       if (order.status === "Preparing" && now - orderTime >= 600000) {
         order.status = "Completed";
-        await order.save(); // save updated status
+        await order.save(); 
       }
 
       updatedOrders.push(order);

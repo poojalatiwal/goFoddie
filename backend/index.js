@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 require('./db')(function (err, data, CatData) {
   if (err) {
-    console.log("❌ DB Error:", err);
+    console.log(" DB Error:", err);
   } else {
     global.foodData = data;
     global.foodCategory = CatData;
@@ -50,5 +50,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`✅ Server running at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
