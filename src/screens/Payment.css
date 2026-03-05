@@ -1,0 +1,106 @@
+.payment-page {
+  margin-top: 120px;
+  padding-top: 50px;
+  max-width: 850px;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+}
+
+.payment-page h2 {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.payment-page .card {
+  background: #1b1b1b;
+  border-radius: 14px;
+  border: 1px solid #2e2e2e;
+  padding: 18px 20px;
+  color: white;
+}
+
+.payment-page h5 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #e0e0e0;
+}
+
+.payment-page select,
+.payment-page input {
+  background-color: #101010 !important;
+  color: white !important;
+  border: 1px solid #303030;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.payment-page select:focus,
+.payment-page input:focus {
+  border-color: #00d084;
+  box-shadow: 0 0 0 0.15rem rgba(0, 208, 132, 0.25);
+  outline: none;
+}
+
+.order-summary-row,
+.payment-page .border-bottom {
+  border-color: #2f2f2f !important;
+}
+
+
+.payment-total,
+.payment-page h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00d084;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.payment-btn-main {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #00d084, #00a86b);
+  border: none;
+  width: 100%;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.payment-btn-main:hover {
+  background: linear-gradient(135deg, #00f29c, #00c27d);
+  transform: translateY(-2px);
+}
+
+.inline-address-box {
+  background: #111;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.inline-address-box label {
+  color: #cfcfcf;
+  font-size: 14px;
+}
+
+.save-address-btn {
+  background: #00d084 !important;
+  color: black !important;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.save-address-btn:hover {
+  background: #00f29c !important;
+}
